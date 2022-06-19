@@ -70,4 +70,11 @@ const createLSData = (key, value) => {
 
 }
 
+/**
+ * Update our LS Data
+ */
+const updateLSData = (key, array) => {
+    localStorage.setItem(key, JSON.stringify(array))
+}
+
 

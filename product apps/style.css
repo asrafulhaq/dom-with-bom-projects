@@ -1,5 +1,15 @@
-
-
 .shop-data tr{
     vertical-align: middle;
+}
+
+.single-product {
+    text-align: center;
+}
+
+.single-product img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border:10px solid #FFF;
 }
