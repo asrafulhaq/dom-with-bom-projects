@@ -1,0 +1,234 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+input:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+} 
+
+ul {
+    margin-bottom: 0px;
+}
+
+
+
+/* Facebook header design */
+.fb-top-header {
+    padding-top: 7px;
+    z-index: 99999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.fb-brands {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.fb-brands a {
+    width: 35px;
+    height: 33px;
+    background-image: url('./images/icons.png');
+    display: inline-block;
+    background-position: 0px -12px;
+    transform: scale(1.1);
+}
+
+.fb-brands .search {
+    position: relative;
+    margin-left: 5px;
+}
+
+.fb-brands .search input {
+    padding: 10px 5px 10px 30px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: 1px solid #F0F2F5;
+    background-color: #F0F2F5;
+    width: 250px;
+    color: #050505;
+}
+.fb-brands .search button {
+    position: absolute;
+    left: 12px;
+    border: none;
+    top: 10px;
+}
+
+.fb-menu ul {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    height: 50px;
+}
+
+.fb-menu ul li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+.fb-menu ul li a{
+    display: block;
+    color: #65676b;
+}
+.fb-menu ul li.active a {
+    color: #1b74e4;
+}
+
+.fb-menu ul li.active::before {
+    content :'';
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color:#1b74e4;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+}
+
+.fb-auth ul {
+    display: flex; 
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.fb-auth ul li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.fb-auth ul li {
+    margin: 0px 4px;
+}
+.fb-auth ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #D8DADF;
+    color: #050505;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+
+/* FB Bodu CSS  */
+.fb-body {
+    background-color: #F0F2F5;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.fb-body .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.fb-body .list .list-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.fb-body .list .list-title {
+    margin-left: 10px;
+}
+
+.fb-body .list:hover {
+    background-color: #E6E7EA;
+}
+
+/* Fb story area  */
+
+.fb-story-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fb-story-area .story-box {
+    width: 115px;
+    height: 200px;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+    background-size: auto 100% ;
+    background-position: center center;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+    transition: .3s ease-in-out;
+    
+}
+
+.fb-story-area .story-box:hover {
+    background-size: auto 110% ;
+}
+
+.fb-story-area .story-box:nth-child(1) {
+    background-image: url('./images/mahdi.jpg');
+}
+
+
+.fb-story-area .story-box:nth-child(2) {
+    background-image: url('./images/t1.jpg');
+}
+
+
+.fb-story-area .story-box:nth-child(3) {
+    background-image: url('./images/t2.jpg');
+}
+
+
+.fb-story-area .story-box:nth-child(4) {
+    background-image: url('./images/t3.jpg');
+}
+
+
+.fb-story-area .story-box:nth-child(5) {
+    background-image: url('./images/t4.jpg');
+}
+
+.fb-story-area .story-box .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    overflow: hidden;
+    border: 3px solid #2074E4 ;
+}
+
+.fb-story-area .story-box span {
+    font-size: 13px;
+    color: #FFF;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
