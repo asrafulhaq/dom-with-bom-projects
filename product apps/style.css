@@ -1,3 +1,7 @@
+i {
+    pointer-events: none; 
+}
+
 .shop-data tr{
     vertical-align: middle;
 }
