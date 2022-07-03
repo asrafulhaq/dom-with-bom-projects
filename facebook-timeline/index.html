@@ -160,36 +160,9 @@
 
 
                  <!-- Post Timeline  -->
-                 <div class="post-timeine-area my-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <div class="post-auth-area">
-                                <div class="user-info">
-                                    <img src="./images/mahdi.jpg" alt="">
-                                    <div class="details">
-                                        <span>Mahdi Al Muntasir</span>
-                                        <span>2 h . <i class="fas fa-globe-asia"></i></span>
-                                    </div>
-                                </div>
-                                <div class="dropdown">
-                                    <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                        <i class="fas fa-ellipsis-h"></i>
-                                    </a>
-                                  
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                      <li><a class="dropdown-item" href="#">Edit</a></li>
-                                      <li><a class="dropdown-item" href="#">Delete</a></li>                                      
-                                    </ul>
-                                  </div>
-                            </div>
-                            <div class="post-content-area my-3">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, obcaecati est repellat ab itaque quam eos tenetur iure eveniet minima!</p>
-                                
-                            </div>
-                        </div>
-                        <img src="https://img.freepik.com/free-photo/beautiful-flowers-bouquet-with-copy-space_23-2149053793.jpg?w=2000" alt="">
-                    </div>
-                </div>
+                 <div class="all-posts">
+                    
+                 </div>
 
 
 
@@ -213,25 +186,25 @@
                 <div class="modal-body">
                     <h3>Create Post</h3>
                     <hr>   
-                    <form action="">
+                    <div class="msg"></div>
+                    <form id="post_add_form">
                         <div class="my-3">
                             <label for="">Auth Name</label>
-                            <input type="text" class="form-control">
+                            <input name="aname" type="text" class="form-control">
                         </div>
                         <div class="my-3">
                             <label for="">Auth Photo</label>
-                            <input type="text" class="form-control">
+                            <input name="aphoto" type="text" class="form-control">
                         </div>
                         <div class="my-3">
                             <label for="">Post Content</label>
-                            <textarea class="form-control"></textarea>
+                            <textarea name="pcontent" class="form-control"></textarea>
                         </div>
                         <div class="my-3">
                             <label for="">Post Photo</label>
-                            <input type="text" class="form-control">
+                            <input name="pphoto" type="text" class="form-control">
                         </div>
-                        <div class="my-3">
-                            
+                        <div class="my-3">                            
                             <input type="submit" class="btn btn-primary w-100" value="Create Post">
                         </div>
                     </form> 
@@ -244,6 +217,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./app/functions.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
