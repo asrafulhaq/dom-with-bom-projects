@@ -28,7 +28,7 @@ const readLSData  = (key) => {
 const createLSData = (key, value) => {
 
     // init val 
-    let data = [];
+    let data = []; 
 
     // check key exists or not 
     if( localStorage.getItem(key) ){
@@ -37,7 +37,7 @@ const createLSData = (key, value) => {
     // now push data to LS 
     data.push(value);
     // set data 
-    localStorage.setItem(key, JSON.stringify(data));
+    localStorage.setItem(key, JSON.stringify(data)); 
     
 
 }

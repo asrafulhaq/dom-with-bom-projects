@@ -11,6 +11,12 @@ const getAllPosts = () => {
 
     let posts = readLSData('fb_post');
     let list = '';
+
+    if( !posts ){
+        all_posts.innerHTML = `<div class="card shadow-sm text-center" style="border-radius:10px;"><div class="card-body">No post found</div></div>`;
+        return false;
+    }
+
     posts.reverse().map( data => {
         list += `
 
@@ -40,8 +46,9 @@ const getAllPosts = () => {
                     <p>${ data.pcontent }</p>
                     
                 </div>
-            </div>
-            <img src="${ data.pphoto }" alt="">
+            </div>            
+            ${ data.pphoto ? '<img src="'+ data.pphoto +'" alt="">' : '' }
+
         </div>
      </div>
 
